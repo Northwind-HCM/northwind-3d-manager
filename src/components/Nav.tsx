@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Boxes, Calculator, LayoutDashboard } from "lucide-react";
+import { Boxes, Calculator, LayoutDashboard, Package } from "lucide-react";
 
 export default function Nav() {
   return (
@@ -8,9 +8,10 @@ export default function Nav() {
       <nav>
         <Link href="/"><LayoutDashboard size={19}/>Dashboard</Link>
         <Link href="/filament"><Boxes size={19}/>Filamente</Link>
+        <Link href="/products"><Package size={19}/>Produkte</Link>
         <Link href="/calculator"><Calculator size={19}/>Kalkulation</Link>
       </nav>
-      <div className="sidebar-footer">MVP · lokale Speicherung</div>
+      <div className="sidebar-footer">MVP · Firebase optional</div>
     </aside>
   );
 }
